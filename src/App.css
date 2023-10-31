@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Leckerli+One&display=swap');
 .App {
   text-align: center;
 }
@@ -36,3 +37,6 @@
     transform: rotate(360deg);
   }
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
