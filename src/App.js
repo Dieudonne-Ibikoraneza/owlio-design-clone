@@ -48,7 +48,7 @@ function App() {
             </div>
           </div>
         </header>
-        <div className="top-40 text-slate-700 bg-[#fff] absolute w-[85%] left-20 h-[60rem] shadow-lg shadow-indigo-500/50 rounded-2xl overflow-y-hidden">
+        <div className="top-40 text-slate-700 bg-[#fff] absolute w-[85%] left-20 h-[60rem] overflow-x-hidden shadow-lg shadow-indigo-500/50 rounded-2xl overflow-y-hidden">
           <div className="absolute bg-gradient-to-t from-[#ddd] to-[#eee] h-[100%] overflow-hidden w-[25%] rounded-tl-2xl ">
             <img
               src={logo}
@@ -211,19 +211,20 @@ function App() {
                 <BiUserPlus className="relative w-[25px] h-[25px] opacity-70 -left-[4.5rem] text-white top-[7px]" />
               </div>
               <div className="h-10 w-32 bg-[#ddd] relative float-right shadow-lg -right-56 -top-5 rounded-3xl flex justify-center items-center">
-                {/* <span
-                  className="-top-[0.1rem] relative -left-2 opacity-70"
-                  style={{ fontFamily: "agbalumo" }}
+                <select
+                  className="h-10 w-32 bg-[#ddd] rounded-2xl pl-4 justify-center appearance-none focus:outline-none"
+                  style={{
+                    WebkitAppearance: "none",
+                    MozAppearance: "none",
+                    appearance: "none",
+                  }}
                 >
-                  Newest
-                </span>
-                <BiCaretDown className="relative opacity-70 left-1 top-0" /> */}
-                <select className="h-10 w-32 bg-[#ddd] rounded-2xl pl-4 justify-center">
                   <option className="relative outline-none">Newest</option>
                   <option className="relative outline-none">Course</option>
                   <option className="relative outline-none">Category</option>
                   <option className="relative outline-none">Curriculum</option>
                 </select>
+                <BiCaretDown className="absolute right-3 top-1/2 transform -translate-y-1/2" />
               </div>
             </div>
           </div>
